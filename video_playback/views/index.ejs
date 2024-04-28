@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Page</title>
+    <style>
+    .main-content {
+    margin: auto;
+    width: 65%;
+    border: 3px solid #AF743A;
+    padding: 10px;
+    }
+    body {
+  margin: 0;
+  padding: 0;
+  font-family: montserrat;
+  /* Use linear gradient to create a faded overlay on top of the background image */
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/Fashion recommender system (1).png');
+  /* Set background size and position */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+   
+ p{
+    
+    margin-left: 30%;
+    margin-top: 50px;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+ }
+
+    </style>
+
+</head>
+
+<body>
+    <div class = "main-content">
+    <ul>
+        <% videos.forEach(video => { %>
+        <li>
+            <div class="video-thumbnail"></div>
+            <p><%= video.title %></p>
+            <iframe width="800" height="500" src="<%= video.youtubeLink %>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen alt="youtube-video"></iframe>
+        </li>
+        <% }); %>
+    </ul>
+    </div>
+</body>
+
+</html>
