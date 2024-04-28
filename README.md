@@ -1,9 +1,16 @@
-#StyleSuggest
-##clone the repository
+# StyleSuggest
+
+## Clone the repository
+To clone the repository, run the following command:
+
 git clone https://github.com/officialshivansh26/Web_Tech_FInal_Project
-##Steps to run
-1. Run the index.html file using VS Code Golive feature
-2. Run the app.js file in video playback folder using nodemon app.js
-3. Run the ML Model
-4. Run the index.js file using nodemon index.js
-5. You are good to go
+
+
+## Steps to Run
+1. Run the `index.html` file using the VS Code Go Live feature.
+2. Navigate to the `video playback` folder and run the `app.js` file using nodemon:
+nodemon app.js
+3. Run the ML model.
+4. Run the `index.js` file using nodemon:
+5. You are good to go!
+
